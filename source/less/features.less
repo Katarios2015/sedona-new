@@ -35,10 +35,10 @@
 }
 
 .features__item {
-  /*display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: flex-start;*/
-  /*.indents-none;*/
+  justify-content: flex-start;
+  .indents-none;
   .text-align-center;
 }
 
@@ -47,15 +47,15 @@
   color: @white;
 }
 
-.features__item-block--blue {
-  padding: 45px 0;
+.features__item-blue {
+  /*padding: 45px 0;*/
   margin: 0;
   .bg-color-blue;
 }
 
-/*.features__item-block {
+.features__item-block {
   padding: 45px 0;
-}*/
+}
 
 .features__city-img {
   min-height: 262px;
@@ -72,12 +72,6 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 200;
-}
-
-.features__item--house,
-.features__item--gift,
-.features__item--food {
-  text-align: left;
 }
 
 @media (min-width: @tablet-width) {
@@ -105,7 +99,7 @@
     .text-align-center;
   }
 
-  .features__item-block--blue {
+  .features__item-blue {
     display: flex;
     flex-direction: row;
   }
@@ -136,10 +130,6 @@
     background-size: cover;
   }
 
-  .features__city-img img {
-    display: none;
-  }
-
   .features__bridge-img {
     min-height: 257px;
     min-width: 512px;
@@ -147,10 +137,6 @@
     background-image: url("../img/main-bridge-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .features__bridge-img img {
-    display: none;
   }
 
   .features__item--house {
