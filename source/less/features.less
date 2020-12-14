@@ -57,10 +57,9 @@
   padding: 45px 0;
 }*/
 
-.features__city-img {
+.features__img {
   min-height: 262px;
   .indents-none;
-  /*background-image: url("../img/main-city-mobile@1x.jpg");*/
 }
 
 .features__item--gray {
@@ -75,10 +74,23 @@
   font-weight: 200;
 }
 
-.features__item--house,
-.features__item--gift,
-.features__item--food {
+.features__item--facilities {
+  display: flex;
+  /*flex-wrap: wrap;*/
   text-align: left;
+}
+
+.features__icon {
+  order: -1;
+  margin-right: 16px;
+}
+
+.features__title-facilities {
+  align-self: center;
+}
+
+.features__description--plus {
+
 }
 
 @media (min-width: @tablet-width) {
@@ -129,7 +141,7 @@
     padding: 0 25px 0;
   }
 
-  .features__city-img {
+  .features__img--city {
     min-height: 256px;
     min-width: 512px;
     background-image: url("../img/main-city-tablet@1x.jpg");
@@ -137,21 +149,17 @@
     background-size: cover;
   }
 
-  .features__city-img img {
+  .features__img img {
     display: none;
   }
 
-  .features__bridge-img {
+  .features__img--bridge {
     min-height: 257px;
     min-width: 512px;
     order: -1;
     background-image: url("../img/main-bridge-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .features__bridge-img img{
-    display: none;
   }
 
   .features__item--house {
@@ -208,7 +216,7 @@
     flex-direction: row;
   }
 
-  .features__city-img {
+  .features__img--city {
     min-height: 260px;
     min-width: 800px;
     background-image: url("../img/main-city-desktop@1x.jpg");
@@ -216,7 +224,7 @@
     background-size: cover;
   }
 
-  .features__bridge-img {
+  .features__img--bridge {
     min-height: 260px;
     min-width: 800px;
     order: -1;
