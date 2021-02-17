@@ -43,6 +43,11 @@
   padding: 0;
 }
 
+.features__description--gray {
+  margin: 0;
+  padding: 0 0 33px 0;
+}
+
 .features__title {
   font-size: 18px;
   line-height: 26px;
@@ -56,19 +61,32 @@
 .features__item-block--blue {
   padding: 45px 0;
   margin: 0;
-  .bg-color-blue;
+  background-color: #81b3d2;
+}
+
+.features__item-block--triangle {
+  background: #81b3d2 url("../img/bg-triangle.svg") no-repeat left 0 top 0;
 }
 
 .features__img {
-  min-height: 262px;
+  height: 260px;
   .indents-none;
 }
 
 .features__item--gray {
-  padding: 33px 0;
+  padding: 33px 0 0 0;
   .bg-color-gray;
-  border-bottom: 1px solid #d6d6d6;
 }
+
+.features__item--gray:not(:last-child).features__item--gray::after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 1px;
+  margin: 0 20px;
+  background-color: #d6d6d6;
+}
+
 
 .features__title--number {
   font-size: 14px;
