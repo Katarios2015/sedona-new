@@ -4,7 +4,10 @@
   margin: 0 auto;
   width: 320px;
   height: 450px;
-  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-image:
+  url("../img/bg-intro-triangle-mobile.svg"),
+  url("../img/text-sedona-index.svg"),
+  url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px,280px,auto;
   background-position: left 0 bottom 3px, left 21px top 147px, left -217px bottom 3px;
@@ -16,14 +19,25 @@
 
 @media (min-width: @tablet-width) {
   .logo {
-    min-width: 768px;
-    min-height: 520px;
-    background-image: url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
-    /*background-position: 90px 20px,center;*/
-    background-size: 460px, cover;
+    width: 768px;
+    height: 520px;
+    background-image:
+    url("../img/bg-intro-triangle-tablet.svg"),
+    url("../img/text-sedona-index.svg"),
+    url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-size: 768px,460px,auto;
+    background-position: left 0 bottom 0px,left 166px bottom 92px,left 0 top 0;
   }
+
+  .logo__link {
+    .text-align-center;
+    position: absolute;
+    top: 0;
+    left: 43%;
+  }
+
+
 }
 
 @media (min-width: @desktop-width) {
