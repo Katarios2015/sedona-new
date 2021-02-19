@@ -139,7 +139,6 @@
   .features__list {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
     flex-wrap: wrap;
     .list-style-none;
     .indents-none;
@@ -191,10 +190,6 @@
     flex-direction: column;
   }
 
-  .features__description--plus {
-    padding: 28px 38px;
-  }
-
   .features__item-block--blue {
     max-width: 256px;
     max-height: 259px;
@@ -204,18 +199,33 @@
     background: #81b3d2;
   }
 
-  .features__title--white {
+  .features__title {
+    padding: 0 57px;
+    margin: 0;
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .features__title--white {
     .text-align-center;
     padding: 0 30px;
   }
 
-  .features__description--white {
+  .features__description {
+    font-family: PT Sans;
     font-size: 14px;
     line-height: 21px;
     .text-align-center;
-    padding: 0 25px 0;
+    padding: 30px 38px 0;
+  }
+
+  .features__description--plus {
+    padding: 28px 38px;
+  }
+
+  .features__description--gray {
+    .bg-color-gray;
+    padding: 30px 53px 0;
   }
 
   .features__img--city {
@@ -239,31 +249,6 @@
     background-size: cover;
   }
 
-  /*.features__item--house {
-    order: 1;
-  }
-
-  .features__item--house,
-  .features__item--gift,
-  .features__item--food {
-    width: 180px;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .features__item--gift {
-    margin-right: 0;
-  }
-
-  .features__title--house,
-  .features__title--gift,
-  .features__title--food {
-    font-size: 21px;
-    line-height: 26px;
-    .text-align-center;
-    padding: 0 30px;
-  }*/
-
   .features__item--gray {
     display: flex;
     flex-direction: column;
@@ -274,32 +259,17 @@
     border-bottom: 0;
   }
 
-  .features__title {
-    padding: 0 57px;
-    margin: 0;
-    font-size: 21px;
-    line-height: 26px;
-  }
-
-  .features__description--gray {
-    font-size: 14px;
-    line-height: 21px;
-    .text-align-center;
-    .bg-color-gray;
-    padding: 0 50px;
-  }
-
   .features__title--number {
     font-size: 14px;
     line-height: 21px;
     text-align: center;
+    padding-top: 18px;
   }
 
   .features__item--gray::after {
     content: none !important;
     display: none !important;
   }
-
 }
 
 @media (min-width: @desktop-width) {
