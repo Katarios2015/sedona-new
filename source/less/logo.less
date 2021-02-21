@@ -43,21 +43,34 @@
 
   .logo__image {
     display: none;
-    /*background-image: url(../img/logo-sedona-tablet.svg);
-    background-repeat: no-repeat;
-    background-size: cover;*/
   }
-
 }
 
 @media (min-width: @desktop-width) {
   .logo {
     min-width: 1200px;
-    min-height: 522px;
-    background-image: url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@1x.jpg");
-    /*background-position: 90px 20px,center;*/
-    background-size: 465px, cover;
+    min-height: 520px;
+    background-image:
+    url("../img/bg-intro-triangle-desktop.svg"),
+    url("../img/text-sedona-index.svg"),
+    url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-size: 1200px, auto;
+    background-position: left 0 bottom 0px,50%,left 0 top 0;
+  }
+
+  .logo__link {
+    width: 186px;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    left: 43%;
+    background-image: url(../img/logo-sedona-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .logo__image {
+    display: none;
   }
 }
