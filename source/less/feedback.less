@@ -16,8 +16,8 @@
 
 .feedback__map-pin {
   position: absolute;
-  top: 164px;
-  left: 175px;
+  top: 46%;
+  left: 56%;
   width: 29px;
   height: 29px;
   border: 9px solid @white;
@@ -50,8 +50,8 @@
 
   .feedback__map-pin {
     position: absolute;
-    top: 164px;
-    left: 400px;
+    top: 45%;
+    left: 52%;
     width: 29px;
     height: 29px;
     border: 9px solid @white;
@@ -67,8 +67,30 @@
 }
 
 @media (min-width: @desktop-width) {
+  .feedback {
+    min-width: 1200px;
+    margin: 0 auto;
+  }
   .feedback__map {
     position: relative;
     margin: 0 auto;
+    width: 1200px;
+  }
+
+  .feedback__map-pin {
+    position: absolute;
+    top: 45%;
+    left: 51%;
+    width: 28px;
+    height: 28px;
+    border: 9px solid @white;
+    border-radius: 50% 50% 50% 50%;
+    .bg-color-blue;
+  }
+
+  .feedback__map-box iframe {
+    bottom: -23px;
+    width: 100%;
+    text-align: center;
   }
 }
