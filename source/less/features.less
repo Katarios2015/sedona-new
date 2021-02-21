@@ -191,8 +191,7 @@
   }
 
   .features__item-block--blue {
-    max-width: 256px;
-    max-height: 259px;
+    width: 256px;
   }
 
   .features__item-block--triangle {
@@ -229,31 +228,30 @@
   }
 
   .features__img--city {
-    min-height: 256px;
+    height: 256px;
     min-width: 512px;
     background-image: url("../img/main-city-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
+  }
+
+  .features__img--bridge {
+    height: 256px;
+    min-width: 512px;
+    order: -1;
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 
   .features__img img {
     display: none;
   }
 
-  .features__img--bridge {
-    min-height: 257px;
-    min-width: 512px;
-    order: -1;
-    background-image: url("../img/main-bridge-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .features__item--gray {
     display: flex;
     flex-direction: column;
-    max-width: 256px;
-    max-height: 259px;
+    width: 256px;
     text-align: center;
     padding: 50px 0;
     border-bottom: 0;
@@ -281,9 +279,16 @@
     margin: 55px 300px;
   }
 
-  .features__item-blue {
-    display: flex;
-    flex-direction: row;
+  .features__item-block--blue {
+    width: 400px;
+  }
+
+  .features__title--white {
+    padding: 0 96px;
+  }
+
+  .features__title--number {
+    padding-top: 18px;
   }
 
   .features__img--city {
@@ -291,7 +296,7 @@
     min-width: 800px;
     background-image: url("../img/main-city-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
   }
 
   .features__img--bridge {
@@ -300,17 +305,15 @@
     order: -1;
     background-image: url("../img/main-bridge-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
   }
 
-  .features__item--house,
-  .features__item--gift,
-  .features__item--food {
-    padding: 60px;
+  .features__item--facilities {
+    width: 400px;
   }
 
   .features__item--gray {
-    width: 280px;
-    padding: 60px 60px;
+    min-width: 400px;
+    padding: 50px 0 60px;
   }
 }
