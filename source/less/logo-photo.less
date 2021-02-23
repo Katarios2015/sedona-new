@@ -1,21 +1,28 @@
-.logo-inner {
+.logo-photo {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 320px;
-  min-height: 390px;
-  background-image: url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
-  background-size: 280px, cover;
+  height: 215px;
+  background-image:
+  url("../img/bg-intro-triangle-mobile.svg"),
+  url("../img/text-sedona.svg"),
+  url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-size: 320px,230px,contain;
+  background-position: left 0 bottom 0, left 0 top 0, left 0 bottom 0;
 }
 
-p.logo__intro-text {
+.logo-photo__link {
   .text-align-center;
 }
 
+/*p.logo__intro-text {
+  .text-align-center;
+}*/
+
 @media (min-width: @tablet-width) {
-  .logo-inner {
+  .logo-photo {
     min-width: 768px;
     min-height: 520px;
     background-image: url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
@@ -26,7 +33,7 @@ p.logo__intro-text {
 }
 
 @media (min-width: @desktop-width) {
-  .logo-inner {
+  .logo-photo {
     min-width: 1200px;
     min-height: 522px;
     background-image: url("../img/text-sedona.svg"), url("../img/bg-back-desktop@1x.jpg");
