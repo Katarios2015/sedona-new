@@ -3,7 +3,8 @@
   flex-direction: column;
   margin: 0 auto;
   width: 320px;
-  height: 450px;
+  height: 390px;
+  padding-top: 60px;
   background-image:
   url("../img/bg-intro-triangle-mobile.svg"),
   url("../img/text-sedona-index.svg"),
@@ -11,10 +12,15 @@
   background-repeat: no-repeat;
   background-size: 320px,280px,auto;
   background-position: left 0 bottom 3px, left 21px top 147px, left -217px bottom 3px;
+  background-clip: content-box;
 }
 
 .logo__link {
-  .text-align-center;
+  width: 104px;
+  height: 84px;
+  position: relative;
+  top: -16%;
+  left: 37%;
 }
 
 @media (min-width: @tablet-width) {
