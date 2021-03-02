@@ -153,7 +153,6 @@
   }
 
   .video__play-progress {
-    /*position: absolute;*/
     width: 392px;
     height: 3px;
     margin: 45px 162px 45px 91px;
@@ -181,6 +180,49 @@
   .video__btn--replay,
   .video__btn--fullscreen {
     background-color: @white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 86px;
+  }
+
+  .video__wrapper {
+    margin: 0 80px;
+  }
+
+  .video__description {
+    padding: 0 180px 81px;
+  }
+
+  .video__player-block {
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__player {
+    width: 800px;
+    height: 500px;
+    background: url(../img/video-desktop@1x.jpg) no-repeat;
+  }
+
+  .video__play-bar {
+    width: 800px;
+  }
+
+  .video__play-progress {
+    width: 540px;
+  }
+
+  .video__buttons-block {
+    width: 727px;
+  }
+
+  .video__btn--subtitles {
+    margin-left: 622px;
   }
 
 }
