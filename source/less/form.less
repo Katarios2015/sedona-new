@@ -1,0 +1,53 @@
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (min-width:@tablet-width) {
+  .form {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__field {
+    width: 324px;
+    .text-align-center;
+  }
+
+  .form__field--contact,
+  .form__field--attraction,
+  .form__field--emotion {
+    min-width: 648px;
+  }
+
+  .form__field--opinoin {
+    order: -1;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .form {
+    width: 1200px;
+  }
+
+  .form__field {
+    width: 400px;
+  }
+
+  .form__field--user-name {
+    margin-left: 160px;
+  }
+
+  .form__field--contact,
+  .form__field--attraction,
+  .form__field--emotion {
+    min-width: 960px;
+  }
+
+  .form__btn {
+    width: 480px;
+  }
+
+}
