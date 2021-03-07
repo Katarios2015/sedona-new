@@ -1,8 +1,155 @@
+.form {
+  margin: 0 20px;
+  text-align: center;
+}
+
 .form__field {
   display: flex;
   flex-direction: column;
+  border: none;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
+.form__legend {
+  padding-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.form__label--user-name {
+  display: flex;
+  align-items: baseline;
+}
+
+.form__label--user-name:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.form__label-text {
+  line-height: 26px;
+}
+
+.form__input:not(input[type="radio"]):not(input[type="checkbox"]) {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.form__input:not(input[type="radio"]):not(input[type="checkbox"]):not(.form__input--emotion) {
+  height: 60px;
+}
+
+.form__input--user-name {
+  width: 100px;
+  margin-left: 15px;
+  flex-grow: 1;
+}
+
+input[placeholder],
+.form__label-text--checkbox,
+.form__input--emotion {
+  padding-left: 20px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.form__label-text--checkbox {
+  padding-left: 25px;
+}
+
+.form__label--contact {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.form__input--contact {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.form__input--contact:last-of-type {
+  margin-bottom: 0;
+}
+
+.form__input-decor {
+  position: absolute;
+  margin-top: 47px;
+  margin-left: 40%;
+  width: 60px;
+  height: 60px;
+  border-radius: 0 0 0 0;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon-phone.svg);
+  background-position: 50% 50%;
+}
+
+.form__input-decor--mail {
+  margin-top: 172px;
+  background-image: url(../img/icon-mail.svg);
+}
+
+.form__input--attraction,
+.form__input--opinion {
+  .visually__hidden;
+}
+
+.form__label--opinion,
+.form__label--attraction {
+  display: flex;
+  align-items: baseline;
+  height: 60px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+
+.form__check-box {
+  position: absolute;
+  margin-top: -13px;
+  margin-left: -40px;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 0 0 0 0;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+}
+
+.form__check-box--opinion {
+    border-radius: 50% 50% 50% 50%;
+}
+
+.form__input--opinion:checked + .form__check-box--opinion {
+  background-image: url(../img/icon-radio.svg);
+  background-position: 50% 50%;
+}
+
+.form__input--attraction:checked + .form__check-box--attraction {
+  background-image: url(../img/icon-tick.svg);
+  background-position: 50% 50%;
+}
+
+.form__input--emotion {
+  height: 160px;
+  resize: none;
+}
+
+.form__btn {
+  width: 280px;
+  padding: 20px 0;
+  .bg-color-blue;
+  border: none;
+  font-family: "PT Sans";
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: @white;
+  text-transform: uppercase;
+}
 
 @media (min-width:@tablet-width) {
   .form {
@@ -22,9 +169,14 @@
     min-width: 648px;
   }
 
-  .form__field--opinoin {
+  .form__field--opinion {
     order: -1;
   }
+
+  .form__input-decor {
+    margin-left: 60%;
+  }
+
 }
 
 @media (min-width:@desktop-width) {
@@ -46,8 +198,11 @@
     min-width: 960px;
   }
 
+  .form__input-decor {
+    margin-left: 67%;
+  }
+
   .form__btn {
     width: 480px;
   }
-
 }
