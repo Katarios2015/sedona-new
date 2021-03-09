@@ -153,14 +153,74 @@ input[placeholder],
 
 @media (min-width:@tablet-width) {
   .form {
-    width: 768px;
+    width: 648px;
+    margin: 0 60px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .form__field {
-    width: 324px;
-    .text-align-center;
+    width: 278px;
+    text-align: center;
+  }
+
+  .form__field--user-name {
+    display: flex;
+    margin-left: 86px;
+  }
+
+  .form__field--user-name,
+  .form__field--opinion,
+  .form__field--emotion {
+    margin-bottom: 60px;
+  }
+
+  .form__field--contact,
+  .form__field--attraction {
+    margin-bottom: 70px;
+  }
+
+  .form__legend {
+    padding-bottom: 0;
+    font-size: 21px;
+    font-weight: bolder;
+    line-height: 26px;
+  }
+
+
+  .form__legend--user-name,
+  .form__legend--opinion,
+  .form__legend--attraction,
+  .form__legend--emotion {
+    margin-bottom: 60px;
+  }
+
+  .form__legend--user-name,
+  .form__legend--opinion {
+    text-align: left;
+  }
+
+  .form__legend--contact {
+    margin-bottom: 40px;
+  }
+
+  .form__label--opinion {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .form__check-box {
+    margin-top: -20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .form__input--opinion:checked + .form__check-box--opinion {
+    background-size: 30px;
+  }
+
+  .form__label-text--checkbox {
+    padding-left: 48px;
   }
 
   .form__field--contact,
@@ -174,7 +234,36 @@ input[placeholder],
   }
 
   .form__input-decor {
-    margin-left: 60%;
+    margin-left: 587px;
+  }
+
+  .form__legend--attraction {
+    width: 290px;
+  }
+
+  .form__label--attraction {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .form__label--attraction:nth-of-type(3),
+  .form__label--attraction:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .form__label--attraction:nth-of-type(2n+1) {
+    margin-right: 65px;
+  }
+
+  .form__field--attraction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form__btn {
+    width: 324px;
   }
 
 }
