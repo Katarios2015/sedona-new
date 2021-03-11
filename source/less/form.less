@@ -18,6 +18,59 @@
   line-height: 26px;
 }
 
+.form__legend::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 125px;
+  height: 1px;
+  top: 13px;
+  background-color: #d6d6d6;
+}
+
+.form__legend::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 125px;
+  height: 1px;
+  top: -13px;
+  background-color: #d6d6d6;
+}
+
+.form__legend--contact::before {
+  margin-left: -67%;
+}
+
+.form__legend--emotion::before {
+  margin-left: -78%;
+}
+
+.form__legend--contact::after {
+  margin-left: 120%;
+}
+
+.form__legend--emotion::after {
+  margin-left: 127%;
+}
+
+.form__legend--attraction::before {
+  top: 29px;
+  margin-left: -62%;
+}
+
+.form__legend--attraction::after {
+  top: -24px;
+  margin-left: 118%;
+}
+
+.form__legend--user-name::after,
+.form__legend--opinion::after,
+.form__legend--user-name::before,
+.form__legend--opinion::before{
+  content: none;
+}
+
 .form__label--user-name {
   display: flex;
   align-items: baseline;
@@ -135,6 +188,7 @@ input[placeholder],
 
 .form__input--emotion {
   height: 160px;
+  padding-top: 20px;
   resize: none;
 }
 
@@ -150,6 +204,11 @@ input[placeholder],
   color: @white;
   text-transform: uppercase;
 }
+
+.form__note {
+  display: none;
+}
+
 
 @media (min-width:@tablet-width) {
   .form {
@@ -262,10 +321,20 @@ input[placeholder],
     justify-content: center;
   }
 
+  .form__end {
+    display: flex;
+    width: 648px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .form__btn {
     width: 324px;
   }
 
+  .form__note {
+    display: block;
+  }
 }
 
 @media (min-width:@desktop-width) {
