@@ -76,6 +76,30 @@
   .logo__image {
     display: none;
   }
+
+  .logo--small-bg {
+    min-width: 768px;
+    height: 290px;
+    padding-top: 0;
+    background-image:
+    url("../img/bg-intro-triangle-tablet.svg"),
+    url("../img/text-sedona.svg"),
+    url("../img/bg-back-tablet@1x.jpg");
+    background-size: 768px,460px,auto;
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0,left 50% bottom 50%,left 0 bottom 0;
+  }
+
+  .logo__link--small-bg {
+    width: 104px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    left: 43%;
+    background-image: url(../img/logo-sedona-tablet.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: @desktop-width) {
