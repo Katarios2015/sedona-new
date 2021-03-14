@@ -18,59 +18,6 @@
   line-height: 26px;
 }
 
-.form__legend::before {
-  content: "";
-  display: block;
-  position: relative;
-  width: 125px;
-  height: 1px;
-  top: 13px;
-  background-color: #d6d6d6;
-}
-
-.form__legend::after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 125px;
-  height: 1px;
-  top: -13px;
-  background-color: #d6d6d6;
-}
-
-.form__legend--contact::before {
-  margin-left: -67%;
-}
-
-.form__legend--emotion::before {
-  margin-left: -78%;
-}
-
-.form__legend--contact::after {
-  margin-left: 120%;
-}
-
-.form__legend--emotion::after {
-  margin-left: 127%;
-}
-
-.form__legend--attraction::before {
-  top: 29px;
-  margin-left: -62%;
-}
-
-.form__legend--attraction::after {
-  top: -24px;
-  margin-left: 118%;
-}
-
-.form__legend--user-name::after,
-.form__legend--opinion::after,
-.form__legend--user-name::before,
-.form__legend--opinion::before{
-  content: none;
-}
-
 .form__label--user-name {
   display: flex;
   align-items: baseline;
@@ -173,7 +120,7 @@ input[placeholder],
 }
 
 .form__check-box--opinion {
-    border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
 }
 
 .form__input--opinion:checked + .form__check-box--opinion {
@@ -208,7 +155,6 @@ input[placeholder],
 .form__note {
   display: none;
 }
-
 
 @media (min-width:@tablet-width) {
   .form {
@@ -266,6 +212,59 @@ input[placeholder],
   .form__label--opinion {
     margin-top: 20px;
     margin-bottom: 0;
+  }
+
+  .form__legend::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 125px;
+    height: 1px;
+    top: 13px;
+    background-color: #d6d6d6;
+  }
+
+  .form__legend::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 125px;
+    height: 1px;
+    top: -13px;
+    background-color: #d6d6d6;
+  }
+
+  .form__legend--contact::before {
+    margin-left: -67%;
+  }
+
+  .form__legend--emotion::before {
+    margin-left: -78%;
+  }
+
+  .form__legend--contact::after {
+    margin-left: 120%;
+  }
+
+  .form__legend--emotion::after {
+    margin-left: 127%;
+  }
+
+  .form__legend--attraction::before {
+    top: 29px;
+    margin-left: -62%;
+  }
+
+  .form__legend--attraction::after {
+    top: -24px;
+    margin-left: 118%;
+  }
+
+  .form__legend--user-name::after,
+  .form__legend--opinion::after,
+  .form__legend--user-name::before,
+  .form__legend--opinion::before{
+    content: none;
   }
 
   .form__check-box {
@@ -339,25 +338,122 @@ input[placeholder],
 
 @media (min-width:@desktop-width) {
   .form {
-    width: 1200px;
+    width: 960px;
+    margin: 0 120px;
   }
 
   .form__field {
-    width: 400px;
+    width: 360px;
   }
 
   .form__field--user-name {
-    margin-left: 160px;
+    margin-left: 204px;
+    flex-grow: 1;
   }
 
   .form__field--contact,
   .form__field--attraction,
   .form__field--emotion {
-    min-width: 960px;
+    width: 960px;
+  }
+
+  .form__legend--opinion {
+    margin-left: 80px;
+  }
+
+  .form__legend::before {
+    width: 280px;
+  }
+
+  .form__legend::after {
+    width: 280px;
+  }
+
+  .form__legend--contact::before,
+  .form__legend--emotion::before {
+    margin-left: -120%;
+  }
+
+  .form__legend--contact::after,
+  .form__legend--emotion::after {
+    margin-left: 120%;
+  }
+
+
+  .form__legend--attraction::before {
+    top: 29px;
+    margin-left: -114%;
+  }
+
+  .form__legend--attraction::after {
+    top: -24px;
+    margin-left: 117%;
+  }
+
+
+  .form__field--contact {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    /*justify-content: space-between;*/
+  }
+
+  .form__label--contact {
+    width: 70px;
+    padding: 0;
+  }
+
+  .form__label-text-clip {
+    display: block;
+    position: absolute;
+    clip: rect(auto,auto,auto,90px);
+    margin-left: -90px;
+    margin-top: -24px;
+  }
+
+  .form__label--contact:nth-of-type(2) {
+    width: 150px;
+  }
+
+  .form__input--contact {
+    width: 300px;
+    margin-left: 15px;
+  }
+
+  .form__input--contact:first-of-type {
+    margin-right: 80px;
   }
 
   .form__input-decor {
-    margin-left: 67%;
+    margin-left: 370px;
+    margin-top: 16px;
+  }
+
+  .form__input-decor--mail {
+    margin-left: 900px;
+  }
+
+  .form__field--attraction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__label--attraction {
+    width: 160px;
+    margin-bottom: 30px;
+  }
+
+  .form__label--attraction:nth-of-type(2n+1) {
+    margin-right: 0;
+  }
+
+  .form__label-text--checkbox {
+    padding-left: 40px;
+  }
+
+  .form__end {
+    width: 960px;
   }
 
   .form__btn {
