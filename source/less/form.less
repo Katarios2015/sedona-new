@@ -31,13 +31,19 @@
   line-height: 26px;
 }
 
-.form__input:not(input[type="radio"]):not(input[type="checkbox"]) {
+.form__input {
+  height: 60px;
   background-color: #f2f2f2;
   border: none;
 }
 
-.form__input:not(input[type="radio"]):not(input[type="checkbox"]):not(.form__input--emotion) {
-  height: 60px;
+.form__input:hover {
+  background-color: #e5e5e5;
+}
+
+.form__input:focus {
+  outline: 6px solid #e5e5e5;
+  background-color: @white;
 }
 
 .form__input--user-name {
@@ -46,7 +52,7 @@
   flex-grow: 1;
 }
 
-input[placeholder],
+.form__input::placeholder,
 .form__label-text--checkbox,
 .form__input--emotion {
   padding-left: 20px;
@@ -133,6 +139,47 @@ input[placeholder],
   background-position: 50% 50%;
 }
 
+
+.form__input:hover + .form__check-box {
+  background-color: #e5e5e5;
+}
+
+.form__input:active + .form__check-box {
+  background-color: #d5d5d5;
+}
+
+.form__input--opinion:checked:hover + .form__check-box--opinion {
+  background-image: url(../img/icon-radio.svg);
+  background-position: 50% 50%;
+  background-color: #e5e5e5;
+}
+
+.form__input--opinion:checked + .form__check-box--opinion:active {
+  background: #d5d5d5 url(../img/icon-radio.svg) 50% 50% no-repeat;
+  background-size: 30px;
+  background-blend-mode: difference;
+}
+
+.form__input--opinion:checked + .form__check-box--opinion:focus {
+  background-image: url(../img/icon-radio.svg);
+  background-position: 50% 50%;
+}
+
+.form__input--attraction:checked:hover + .form__check-box--attraction {
+  background-image: url(../img/icon-tick.svg);
+  background-position: 50% 50%;
+  background-color: #e5e5e5;
+}
+
+.form__input--attraction:checked + .form__check-box--attraction:active {
+  background: #d5d5d5 url(../img/icon-tick-active.svg) 50% 50% no-repeat;
+}
+
+.form__input--attraction:checked + .form__check-box--opinion:focus {
+  background-image: url(../img/icon-tick.svg);
+  background-position: 50% 50%;
+}
+
 .form__input--emotion {
   height: 160px;
   padding-top: 20px;
@@ -141,8 +188,6 @@ input[placeholder],
 
 .form__btn {
   width: 280px;
-  padding: 20px 0;
-  .bg-color-blue;
   border: none;
   font-family: "PT Sans";
   font-size: 21px;
