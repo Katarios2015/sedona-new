@@ -8,8 +8,48 @@
   flex-direction: column;
   border: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
+  padding-bottom: 23px;
 }
+
+.form__field:last-of-type {
+  margin-bottom: 50px;
+}
+
+.form__label--user-name:last-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 83px;
+  margin-left: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.form__label--contact:last-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: -40px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.form__label--opinion:last-of-type::after,
+.form__label--attraction:last-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 68px;
+  margin-left: -60px;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
 
 .form__legend {
   padding-bottom: 30px;
@@ -77,14 +117,16 @@
   margin-bottom: 20px;
 }
 
-.form__input--contact:last-of-type {
+.form__input--contact:last-of-type,
+.form__input--opinion:last-of-type,
+.form__input--attraction:last-of-type {
   margin-bottom: 0;
 }
 
 .form__input-decor {
   position: absolute;
   margin-top: 47px;
-  margin-left: 33%;
+  margin-left: 215px;
   width: 60px;
   height: 60px;
   border-radius: 0 0 0 0;
@@ -111,6 +153,12 @@
   height: 60px;
   margin-left: 40px;
   margin-bottom: 15px;
+}
+
+.form__label--opinion:last-of-type,
+.form__label--attraction:last-of-type {
+  height: 45px;
+  margin-bottom: 0;
 }
 
 .form__check-box {
@@ -379,6 +427,14 @@
   .form__note {
     display: block;
   }
+
+  .form__label--opinion:last-of-type::after,
+  .form__label--attraction:last-of-type::after,
+  .form__label--contact:last-of-type::after,
+  .form__label--user-name:last-of-type::after {
+    display: none;
+  }
+
 }
 
 @media (min-width:@desktop-width) {
