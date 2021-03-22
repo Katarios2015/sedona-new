@@ -121,15 +121,45 @@
     border-bottom: 0;
   }
 
-  .photos__image {
+  .photos__link {
     display: block;
     width: 324px;
     height: 267px;
   }
 
-  .photos__image--sunset {
+  /*.photos__image--sunset {
     width: 648px;
     height: 402px;
+  }*/
+
+  .photos__link--sunset {
+    width: 648px;
+    height: 402px;
+    background-image: url("../img/photo-sunset-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .photos__link--cactus {
+    background-image: url("../img/photo-cactus-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .photos__link--roads {
+    background-image: url("../img/photo-roads-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .photos__link--bridge {
+    background-image: url("../img/photo-bridge-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .photos__link img {
+    display: none;
   }
 
   .photos__athor {
@@ -204,7 +234,7 @@
     .indents-none;
   }
 
-  .photos__image {
+  .photos__link {
     display: block;
     width: 400px;
     height: 268px;
@@ -212,10 +242,31 @@
     padding: 0;
   }
 
-  .photos__image--sunset {
+  .photos__link--sunset {
     width: 1200px;
-    min-height: 403px;
+    min-height: 400px;
     .indents-none;
+    background-image: url("../img/photo-sunset-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .photos__link--cactus {
+    background-image: url("../img/photo-cactus-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .photos__link--roads {
+    background-image: url("../img/photo-roads-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .photos__link--bridge {
+    background-image: url("../img/photo-bridge-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
   }
 
   .photos__description {
@@ -234,5 +285,4 @@
   .photos__like {
     padding-right: 30px;
   }
-
 }
