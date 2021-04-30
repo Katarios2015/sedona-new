@@ -10,3 +10,43 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.hidden--br {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .hidden--br {
+    display: block;
+  }
+
+.features__description--white .hidden--br {
+  display: none;
+}
+
+  .hidden--br-search {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hidden--br {
+    display: none;
+  }
+
+  .features__description--plus .hidden--br {
+    display: block;
+  }
+
+  .features__description--white .hidden--br {
+    display: block;
+  }
+
+  .features__title--white .hidden--br {
+    display: block;
+  }
+
+  .hidden--br-search {
+    display: block;
+  }
+}

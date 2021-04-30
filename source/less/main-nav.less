@@ -93,16 +93,14 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: auto;
-    margin: 0;
+    width: 768px;
+    /*margin: 0;*/
     .bg-color-white;
   }
 
   .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
     width: 700px;
-    margin: 0 auto;
+    margin: 0 48px;
   }
 
   .main-nav__toggle {
@@ -115,7 +113,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+
   .main-nav__wrapper {
-    width: 1080px;
+    width: 1040px;
+    margin: 0 90px;
   }
 }
