@@ -8,12 +8,18 @@
   flex-direction: column;
   border: none;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
   padding-bottom: 23px;
 }
 
+.form__field--contact,
+.form__field--opinion {
+  padding-bottom: 0;
+  margin-bottom: 45px;
+}
+
 .form__field:last-of-type {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .form__label--user-name:last-of-type::after {
@@ -31,7 +37,7 @@
   content: "";
   display: block;
   position: absolute;
-  margin-top: 100px;
+  margin-top: 94px;
   margin-left: -40px;
   width: 320px;
   height: 1px;
@@ -43,7 +49,7 @@
   content: "";
   display: block;
   position: absolute;
-  margin-top: 68px;
+  margin-top: 71px;
   margin-left: -60px;
   width: 320px;
   height: 1px;
@@ -52,10 +58,22 @@
 
 
 .form__legend {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+}
+
+.form__legend--contact {
+  padding-bottom: 14px;
+}
+
+.form__legend--opinion {
+  padding-bottom: 35px;
+}
+
+.form__legend--attraction {
+  padding-bottom: 30px;
 }
 
 .form__label--user-name {
@@ -64,7 +82,7 @@
 }
 
 .form__label--user-name:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .form__label-text {
@@ -104,7 +122,8 @@
 }
 
 .form__label-text--checkbox {
-  padding-left: 25px;
+  padding-left: 39px;
+  padding-top: 2px;
 }
 
 .form__label--contact {
@@ -113,8 +132,12 @@
 }
 
 .form__input--contact {
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.form__label-mark {
+  margin-left: 3px;
 }
 
 .form__input--contact:last-of-type,
@@ -125,8 +148,8 @@
 
 .form__input-decor {
   position: absolute;
-  margin-top: 47px;
-  margin-left: 215px;
+  margin-top: 38px;
+  margin-left: 221px;
   width: 60px;
   height: 60px;
   border-radius: 0 0 0 0;
@@ -137,7 +160,7 @@
 }
 
 .form__input-decor--mail {
-  margin-top: 172px;
+  margin-top: 140px;
   background-image: url(../img/icon-mail.svg);
 }
 
@@ -151,9 +174,14 @@
   display: flex;
   align-items: baseline;
   height: 60px;
-  margin-left: 40px;
-  margin-bottom: 15px;
+  margin-left: 39px;
+  margin-bottom: 9px;
 }
+
+.form__label--attraction {
+  margin-bottom: 20px;
+}
+
 
 .form__label--opinion:last-of-type,
 .form__label--attraction:last-of-type {
@@ -180,6 +208,7 @@
 .form__input--opinion:checked + .form__check-box--opinion {
   background-image: url(../img/icon-radio.svg);
   background-position: 50% 50%;
+  background-size: 34px;
 }
 
 .form__input--attraction:checked + .form__check-box--attraction {
@@ -204,7 +233,7 @@
 
 .form__input--opinion:checked + .form__check-box--opinion:active {
   background: #d5d5d5 url(../img/icon-radio.svg) 50% 50% no-repeat;
-  background-size: 30px;
+  background-size: 34px;
   background-blend-mode: difference;
 }
 
@@ -229,8 +258,8 @@
 }
 
 .form__input--emotion {
-  height: 160px;
-  padding-top: 20px;
+  height: 140px;
+  padding-top: 14px;
   resize: none;
 }
 
