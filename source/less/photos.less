@@ -21,7 +21,7 @@
 }
 
 .photos__item:first-child {
-  padding-top: 22px;
+  padding-top: 23px;
 }
 
 .photos__item:not(:last-child) {
@@ -40,8 +40,9 @@
 }
 
 .photos__description {
-  padding-bottom: 22px;
+  padding-bottom: 13px;
 }
+
 
 .photos__title,
 .photos__intro {
@@ -49,24 +50,28 @@
 }
 
 .photos__title {
-  padding-top: 40px;
+  padding-top: 22px;
   font-size: 18px;
   line-height: 26px;
 }
 
 .photos__intro {
-  padding: 33px 0;
+  padding: 11px 5px;
 }
 
 .photos__intro,
-.photos__legend {
+.photos__legend,
+.photos__athor {
   font-size: 14px;
   line-height: 24px;
 }
 
+.photos__legend {
+  margin-top: 8px;
+}
+
 .photos__athor {
-  font-size: 14px;
-  line-height: 24px;
+  margin-top: -14px;
   text-transform: none;
 }
 
@@ -78,8 +83,14 @@
   width: 70px;
   height: 30px;
   .list-style-none;
-  .indents-none;
+  padding: 0;
+  margin: -8px 0 0;
 }
+
+.photos__link {
+  margin-top: 0;
+}
+
 
 @media (min-width: @tablet-width) {
   .photos__wrapper {
