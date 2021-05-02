@@ -299,12 +299,19 @@
   .form__field--user-name,
   .form__field--opinion,
   .form__field--emotion {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
 
-  .form__field--contact,
   .form__field--attraction {
-    margin-bottom: 70px;
+    margin-bottom: 28px;
+  }
+
+  .form__field--contact {
+    margin-bottom: 50px;
+  }
+
+  .form__field:last-of-type {
+    margin-bottom: 37px;
   }
 
   .form__legend {
@@ -314,12 +321,17 @@
     line-height: 26px;
   }
 
-
-  .form__legend--user-name,
   .form__legend--opinion,
-  .form__legend--attraction,
+  .form__legend--attraction {
+    margin-bottom: 51px;
+  }
+
   .form__legend--emotion {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
+  }
+
+  .form__legend--user-name {
+    margin-bottom: 56px;
   }
 
   .form__legend--user-name,
@@ -327,12 +339,20 @@
     text-align: left;
   }
 
+  .form__legend--opinion {
+    margin-left: -5px;
+  }
+
+  .form__legend--user-name {
+    margin-left: 12px;
+  }
+
   .form__legend--contact {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
 
   .form__label--opinion {
-    margin-top: 20px;
+    margin-top: 19px;
     margin-bottom: 0;
   }
 
@@ -390,31 +410,52 @@
   }
 
   .form__check-box {
-    margin-top: -20px;
-    width: 60px;
-    height: 60px;
-  }
-
-  .form__input--opinion:checked + .form__check-box--opinion {
-    background-size: 30px;
+    margin-top: -12px;
+    width: 56px;
+    height: 56px;
   }
 
   .form__label-text--checkbox {
-    padding-left: 48px;
+    padding-left: 35px;
+  }
+
+  .form__label--user-name .form__label-text {
+    padding-left: 13px;
+  }
+
+  .form__label-mark {
+    margin-left: 0;
   }
 
   .form__field--contact,
   .form__field--attraction,
   .form__field--emotion {
-    min-width: 648px;
+    width: 648px;
   }
 
   .form__field--opinion {
     order: -1;
   }
 
+  .form__input--contact {
+    margin-top: 5px;
+    margin-bottom: 21px;
+  }
+
   .form__input-decor {
+    margin-top: 31px;
     margin-left: 587px;
+  }
+
+  .form__input-decor--mail {
+    margin-top: 143px;
+  }
+
+  .form__field--attraction {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .form__legend--attraction {
@@ -432,14 +473,8 @@
   }
 
   .form__label--attraction:nth-of-type(2n+1) {
-    margin-right: 65px;
-  }
-
-  .form__field--attraction {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-right: 21px;
+    margin-left: 135px;
   }
 
   .form__end {
