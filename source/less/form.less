@@ -509,11 +509,18 @@
 
   .form__field {
     width: 360px;
+    padding-bottom: 0;
   }
 
   .form__field--user-name {
-    margin-left: 204px;
-    flex-grow: 1;
+    margin-left: 115px;
+    padding-left: 68px;
+    box-shadow: -1px 0 0 0 #dbdbdb;
+    margin-bottom: 64px;
+  }
+
+  .form__field--opinion {
+    margin-bottom: 64px;
   }
 
   .form__field--contact,
@@ -523,7 +530,19 @@
   }
 
   .form__legend--opinion {
-    margin-left: 80px;
+    margin-left: 76px;
+  }
+
+  .form__field--attraction {
+    margin-bottom: 22px;
+  }
+
+  .form__field:last-of-type {
+    margin-bottom: 62px;
+  }
+
+  .form__legend--contact {
+    margin-bottom: 66px;
   }
 
   .form__legend::before {
@@ -560,7 +579,7 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    /*justify-content: space-between;*/
+    margin-bottom: 28px;
   }
 
   .form__label--contact {
@@ -572,8 +591,8 @@
     display: block;
     position: absolute;
     clip: rect(auto,auto,auto,90px);
-    margin-left: -90px;
-    margin-top: -24px;
+    margin-left: -96px;
+    margin-top: -17px;
   }
 
   .form__label--contact:nth-of-type(2) {
@@ -586,12 +605,12 @@
   }
 
   .form__input--contact:first-of-type {
-    margin-right: 80px;
+    margin-right: 88px;
   }
 
   .form__input-decor {
-    margin-left: 370px;
-    margin-top: 16px;
+    margin-left: 338px;
+    margin-top: 6px;
   }
 
   .form__input-decor--mail {
@@ -611,6 +630,11 @@
 
   .form__label--attraction:nth-of-type(2n+1) {
     margin-right: 0;
+    margin-left: 0;
+  }
+
+  .form__label--attraction:first-of-type {
+    margin-left: 39px;
   }
 
   .form__label-text--checkbox {
