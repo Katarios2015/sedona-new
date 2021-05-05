@@ -25,9 +25,15 @@
       </nav>
     </header>
     <main class="photos-main">
-      <section class="logo-photo">
+      <section class="logo logo--small-bg">
         <h1 class="hidden">Добро пожаловать в Седону!</h1>
-        <a class="logo-photo__link"><img class="logo-photo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип"></a>
+        <a class="logo__link logo__link--small-bg">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="/img/logo-sedona-tablet.svg">
+            <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
+          </picture>
+        </a>
       </section>
       <section class="photos">
         <div class="photos__wrapper">
@@ -37,7 +43,13 @@
           </header>
           <ul class="photos__list">
             <li class="photos__item">
-              <a class="photos__link photos__link--sunset" href="#"><img class="photos__img photos__img--sunset" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Рассвет"></a>
+              <a class="photos__link photos__link--sunset" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="photos__img photos__img--sunset" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Рассвет">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div  class="photos__description-text photos__description-text--sunset">
                   <h3 class="photos__legend">Неродные Просторы</h3>
@@ -55,7 +67,12 @@
             </li>
             <li class="photos__item">
               <a class="photos__link photos__link--cactus" href="#">
-                <img class="photos__img photos__img--cactus" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Кактус"></a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="photos__img photos__img--cactus" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Кактус">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div  class="photos__description-text">
                   <h3 class="photos__legend">Местная Растительность</h3>
@@ -73,7 +90,12 @@
             </li>
             <li class="photos__item">
               <a class="photos__link photos__link--roads" href="#">
-                <img class="photos__img photos__img--roads" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север"></a>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="photos__img photos__img--roads" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div  class="photos__description-text">
                   <h3 class="photos__legend">Дорога на север</h3>
@@ -90,7 +112,13 @@
               </div>
             </li>
             <li class="photos__item">
-              <a class="photos__link photos__link--bridge" href="#"><img class="photos__img photos__img--bridge" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола"></a>
+              <a class="photos__link photos__link--bridge" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="photos__img photos__img--bridge" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                </picture>
+              </a>
               <div class="photos__description">
                 <div  class="photos__description-text">
                   <h3 class="photos__legend">Мост Дьявола</h3>

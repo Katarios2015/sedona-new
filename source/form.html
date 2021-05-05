@@ -27,7 +27,13 @@
     <main class="form-main">
       <section class="logo logo--small-bg">
         <h2 class="hidden">Добро пожаловать в Седону!</h2>
-        <a class="logo__link logo__link--small-bg"><img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип"></a>
+        <a class="logo__link logo__link--small-bg">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width:768px)" srcset="/img/logo-sedona-tablet.svg">
+            <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип">
+          </picture>
+        </a>
       </section>
       <section class="reviews">
         <h2 class="hidden">Форма отзыва</h2>

@@ -33,7 +33,7 @@
   margin: 0 auto;
   border: none;
   background: url(../img/video-mobile@1x.jpg) no-repeat;
-  background-size: auto;
+  background-size: contain;
 }
 
 .video__controls-block {
@@ -159,7 +159,11 @@
     margin: 0 auto;
     border: none;
     background: url(../img/video-tablet@1x.jpg) no-repeat;
-    background-size: auto;
+    background-size: contain;
+    @media(min-resolution:@retina-dpi), (min-resolution:@retina-dppx){
+      background: url(../img/video-tablet@2x.jpg) no-repeat;
+      background-size: contain;
+    }
   }
 
   .video__controls-block {
@@ -241,6 +245,11 @@
     width: 800px;
     height: 500px;
     background: url(../img/video-desktop@1x.jpg) no-repeat;
+    background-size: contain;
+    @media(min-resolution:@retina-dpi), (min-resolution:@retina-dppx){
+      background: url(../img/video-desktop@2x.jpg) no-repeat;
+      background-size: contain;
+    }
   }
 
   .video__play-bar {
