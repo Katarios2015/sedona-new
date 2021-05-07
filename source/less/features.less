@@ -4,8 +4,6 @@
 }
 
 .features__wrapper {
-  display: flex;
-  flex-direction: column;
   margin: 0 auto;
 }
 
@@ -193,6 +191,10 @@
     margin: 0 auto;
   }
 
+  .features__wrapper {
+    width: 768px;
+  }
+
   .features__header {
     margin: 12px 100px 49px;
   }
@@ -369,6 +371,10 @@
 
 @media (min-width: @desktop-width) {
   .features {
+    width: 1200px;
+  }
+
+  .features__wrapper {
     width: 1200px;
   }
 
