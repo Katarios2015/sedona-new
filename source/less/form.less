@@ -21,12 +21,21 @@
   margin-bottom: 30px;
 }
 
+.form__label--user-name:last-of-type,
+.form__label--opinion:last-of-type,
+.form__label--attraction:last-of-type {
+  position: relative;
+}
+
+
 .form__label--user-name:last-of-type::after {
   content: "";
   display: block;
   position: absolute;
-  margin-top: 83px;
-  margin-left: -20px;
+  top: 93px;
+  left: -19px;
+  /*margin-top: 83px;
+  margin-left: -20px;*/
   width: 320px;
   height: 1px;
   background-color: #e5e5e5;
@@ -36,8 +45,10 @@
   content: "";
   display: block;
   position: absolute;
-  margin-top: 94px;
-  margin-left: -40px;
+  bottom: -100px;
+  left: -12px;
+  /*margin-top: 94px;
+  margin-left: -40px;*/
   width: 320px;
   height: 1px;
   background-color: #e5e5e5;
@@ -48,12 +59,19 @@
   content: "";
   display: block;
   position: absolute;
-  margin-top: 71px;
-  margin-left: -60px;
+  bottom: -30px;
+  left: -53px;
+  /*margin-top: 71px;
+  margin-left: -60px;*/
   width: 320px;
   height: 1px;
   background-color: #e5e5e5;
 }
+
+/*.form__label--attraction:last-of-type::after {
+  bottom: -67px;
+  left: -53px;
+}*/
 
 
 .form__legend {
@@ -131,6 +149,7 @@
 .form__label-text--checkbox {
   padding-left: 39px;
   padding-top: 2px;
+  position: absolute;
 }
 
 .form__label--contact {
@@ -174,6 +193,10 @@
 .form__input--attraction,
 .form__input--opinion {
   .visually__hidden;
+}
+
+.form__label--mail {
+  position: relative;
 }
 
 .form__label--contact::before {
