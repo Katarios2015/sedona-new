@@ -286,9 +286,9 @@
 }
 
 .form__input--opinion:checked + .form__check-box--opinion:active {
-  background: #d5d5d5 url(../img/icon-radio.svg) 50% 50% no-repeat;
+  background: #d5d5d5 url(../img/icon-radio-active.svg) 50% 50% no-repeat;
   background-size: 34px;
-  background-blend-mode: difference;
+  /*background-blend-mode: difference;*/
 }
 
 .form__input--opinion:checked + .form__check-box--opinion:focus {
@@ -650,6 +650,7 @@
   }
 
   .form__label--contact {
+    position: relative;
     width: 70px;
     padding: 0;
   }
@@ -657,9 +658,9 @@
   .form__label-text-clip {
     display: block;
     position: absolute;
-    clip: rect(auto,auto,auto,90px);
-    margin-left: -92px;
-    margin-top: -17px;
+    clip: rect(30px,auto,auto,auto);
+    left: 0;
+    top: -46px;
   }
 
   .form__label--contact:nth-of-type(2) {
