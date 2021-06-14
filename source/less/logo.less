@@ -154,4 +154,31 @@
       url("../img/bg-back-desktop@1x.jpg");
     }
   }
+
+  .logo {
+    position: relative;
+  }
+
+  .logo::before,
+  .logo::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background-color: #f2f2f2;
+  }
+
+    .logo::before {
+      left: -40px;
+      transform: rotate(180deg);
+      box-shadow: inset 12px 0 12px -12px #b2b2b2;;
+    }
+
+    .logo::after {
+      right: -40px;
+      transform: rotate(180deg);
+      box-shadow: inset -12px 0 12px -12px #b2b2b2;;
+    }
 }
