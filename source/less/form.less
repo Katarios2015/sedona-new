@@ -271,7 +271,11 @@
 }
 
 
-.form__input:hover + .form__check-box {
+/*.form__input:hover + .form__check-box {
+  background-color: #e5e5e5;
+}*/
+
+.form__check-box:hover {
   background-color: #e5e5e5;
 }
 
@@ -288,12 +292,17 @@
 .form__input--opinion:checked + .form__check-box--opinion:active {
   background: #d5d5d5 url(../img/icon-radio-active.svg) 50% 50% no-repeat;
   background-size: 34px;
-  /*background-blend-mode: difference;*/
 }
 
-.form__input--opinion:checked + .form__check-box--opinion:focus {
+.form__input--opinion:focus + .form__check-box--opinion {
+  background-position: 50% 50%;
+  outline: 6px solid #e5e5e5;
+}
+
+.form__input--opinion:checked:focus + .form__check-box--opinion {
   background-image: url(../img/icon-radio.svg);
   background-position: 50% 50%;
+  outline: 6px solid #e5e5e5;
 }
 
 .form__input--attraction:checked:hover + .form__check-box--attraction {
@@ -306,9 +315,9 @@
   background: #d5d5d5 url(../img/icon-tick-active.svg) 50% 50% no-repeat;
 }
 
-.form__input--attraction:checked + .form__check-box--opinion:focus {
-  background-image: url(../img/icon-tick.svg);
+.form__input--attraction:focus + .form__check-box--attraction {
   background-position: 50% 50%;
+  outline: 6px solid #e5e5e5;
 }
 
 .form__input--emotion {
