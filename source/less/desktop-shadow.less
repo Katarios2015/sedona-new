@@ -1,26 +1,28 @@
-.main-nav {
-  position: relative;
-}
+@media (min-width: @desktop-width) {
+  .desktop-shadow {
+    position: relative;
+  }
 
-.main-nav::before,
-.main-nav::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  width: 40px;
-  height: 100%;
-  background-color: #f2f2f2;
-}
+  .desktop-shadow::before,
+  .desktop-shadow::after {
+    content: "";
+    position: absolute;
+    /*z-index: -1;*/
+    top: 0;
+    width: 40px;
+    height: 100%;
+    background-color: #f2f2f2;
+  }
 
-  .main-nav::before {
+  .desktop-shadow::before {
     left: -40px;
     transform: rotate(180deg);
-    box-shadow: inset 12px 0 12px -12px #b2b2b2;;
+    box-shadow: inset 12px 0 12px -12px #b2b2b2;
   }
 
-  .main-nav::after {
+  .desktop-shadow::after {
     right: -40px;
     transform: rotate(180deg);
-    box-shadow: inset -12px 0 12px -12px #b2b2b2;;
+    box-shadow: inset -12px 0 12px -12px #b2b2b2;
   }
+}

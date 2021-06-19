@@ -1,4 +1,4 @@
-.logo {
+.promo {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -16,7 +16,7 @@
   background-clip: content-box;
 }
 
-.logo__link {
+.promo__link {
   width: 104px;
   height: 84px;
   position: relative;
@@ -24,7 +24,7 @@
   left: 35%;
 }
 
-.logo--small-bg {
+.promo--small-bg {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -42,7 +42,7 @@
   background-clip: content-box;
 }
 
-.logo__link--small-bg {
+.promo__link--small-bg {
   width: 104px;
   height: 84px;
   position: relative;
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .logo {
+  .promo {
     width: 768px;
     height: 518px;
     padding-top: 0;
@@ -70,12 +70,12 @@
     }
   }
 
-  .logo__link img {
+  .promo__link img {
     width: 102px;
     height: 82px;
   }
 
-  .logo__link {
+  .promo__link {
     width: 102px;
     height: 82px;
     position: absolute;
@@ -83,7 +83,7 @@
     left: 45%;
   }
 
-  .logo--small-bg {
+  .promo--small-bg {
     min-width: 768px;
     height: 290px;
     padding-top: 0;
@@ -104,7 +104,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .logo {
+  .promo {
     min-width: 1200px;
     min-height: 520px;
     padding-top: 0;
@@ -123,12 +123,12 @@
     }
   }
 
-  .logo__link img {
+  .promo__link img {
     width: 187px;
     height: 96px;
   }
 
-  .logo__link {
+  .promo__link {
     width: 187px;
     height: 96px;
     position: absolute;
@@ -136,7 +136,7 @@
     left: 43%;
   }
 
-  .logo--small-bg {
+  .promo--small-bg {
     min-width: 1200px;
     min-height: 300px;
     padding-top: 0;
@@ -155,30 +155,4 @@
     }
   }
 
-  .logo {
-    position: relative;
-  }
-
-  .logo::before,
-  .logo::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    width: 40px;
-    height: 100%;
-    background-color: #f2f2f2;
-  }
-
-    .logo::before {
-      left: -40px;
-      transform: rotate(180deg);
-      box-shadow: inset 12px 0 12px -12px #b2b2b2;;
-    }
-
-    .logo::after {
-      right: -40px;
-      transform: rotate(180deg);
-      box-shadow: inset -12px 0 12px -12px #b2b2b2;;
-    }
 }
